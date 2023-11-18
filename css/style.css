@@ -1,0 +1,147 @@
+:root{
+    --black-color: #de9c9c;
+    --light-blue-color: #049CB3;
+    --titles-font: 'Vollkorn', serif;
+    --texts-font: 'Plus Jakarta Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Html */
+html{
+    font-size: 16px;
+}
+
+/* Body */
+body{
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+/* Container Flex */
+.containerFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header{
+    height: 10vh;
+    border-bottom: 1px solid var(--light-blue-color);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.headerTitle{
+    font-family: var(--titles-font);
+}
+
+.headerTitleLink{
+    text-decoration: none;
+    color: var(--light-blue-color);
+}
+
+.headerList{
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+.headerLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-blue-color);
+    font-family: var(--texts-font);
+}
+
+.headerItem{
+    position: relative;
+    word-spacing: .2rem;
+}
+
+.headerItem::before{
+    content: '';
+    border-bottom: 2px solid var(--light-blue-color);
+    width: 50%;
+    bottom: -.25rem;
+    left: 25%;
+    position: absolute;
+}
+
+.headerItem:hover::before{
+    width: 100%;
+    left: 0;
+    transition: .75s;
+}
+
+.headerLanguages{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.headerButtons{
+    height: 2rem;
+    width: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-width: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.headerButtons:hover{
+    opacity: .5;
+}
+
+.headerButtonEs{
+    background-image: url(../img/flagArg.svg);
+}
+
+.headerButtonEn{
+    background-image: url(../img/flagGb.svg);
+}
+
+/* Main */
+.main{
+    margin-top: 10vh;
+    height: 90vh;
+    border-bottom: 1px solid var(--light-blue-color);
+    color: wheat;
+}
+
+.mainIconImg{
+    width: 60px;
+    height: 60px;
+}
+
+/* Projects */
+.projects{
+    height: 100vh;
+    border-bottom: 1px solid var(--light-blue-color);
+}
+
+/* About Me */
+.aboutMe{
+    height: 60vh;
+    border-bottom: 1px solid var(--light-blue-color);
+}
+
+/* Contact */
+.contact{
+    height: 40vh;
+    border-bottom: 1px solid var(--light-blue-color);
+}
+
+/* Footer */
+.footer{
+    height: 8vh;
+    border-bottom: 1px solid var(--light-blue-color);
+}
