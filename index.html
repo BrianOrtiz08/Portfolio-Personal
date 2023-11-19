@@ -26,7 +26,7 @@
             <nav class="headerNav">
                 <ul class="headerList">
                     <li class="headerItem">
-                        <a href="" class="headerLink" id="projectsId"></a>
+                        <a href="#sectionProjects" class="headerLink" id="projectsId"></a>
                     </li>
 
                     <li class="headerItem">
@@ -48,9 +48,9 @@
 
         <main class="main">
             <div class="mainDetails">
-                <h2 class="mainName" id="nameId"></h2>
+                <p class="mainName" id="nameId"></p>
 
-                <h3 class="mainRol" id="rolId"></h3>
+                <h2 class="mainRol" id="rolId"></h2>
 
                 <p class="mainParagraph" id="paragraphId"></p>
 
@@ -76,12 +76,15 @@
             </div>
 
             <div class="mainImgProfile">
-                <!-- <img src="https://picsum.photos/250/375" alt="" class="mainImg"> -->
                 <img src="./img/profile.jpg" alt="" class="mainImg">
             </div>
         </main>
 
-        <section class="projects">Projects</section>
+        <section class="projects" id="sectionProjects">
+            <h2 class="projectsTitle">Proyectos</h2>
+
+            <div class="projectsGrid" id="projectsGridId"></div>
+        </section>
 
         <section class="aboutMe">About Me</section>
 
@@ -91,8 +94,9 @@
     </div>
 
     <!-- Link de JS -->
-    <script src="./js/languages.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/languages.js"></script>
+    <script src="./js/projects.js"></script>
 </body>
 
 </html>

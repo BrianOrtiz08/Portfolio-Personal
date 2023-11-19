@@ -14,12 +14,12 @@
 /* Html */
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 /* Body */
 body{
     background-color: var(--black-color);
-    text-align: center;
 }
 
 /* Container Flex */
@@ -32,7 +32,7 @@ body{
 .header{
     height: 10vh;
     border-bottom: 1px solid var(--light-blue-color);
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -44,21 +44,7 @@ body{
     animation: scrollHeader linear both;
     animation-timeline: scroll(root);
     animation-range: 0 20vh;
-}
-
-@keyframes scrollHeader {
-    to {
-        background-color: rgba(255, 166, 0, .75);
-        backdrop-filter: blur(5px);
-        border: none;
-    }
-}
-
-@keyframes scrollColor {
-    to {
-        color: #000;
-        border-color: #000;
-    }
+    z-index: 1;
 }
 
 .headerTitleLink, .headerLink, .headerItem::before{
@@ -147,6 +133,7 @@ body{
 /* Main */
 .main{
     height: 90vh;
+    margin-top: 10vh;
     border-bottom: 1px solid var(--light-blue-color);
     color: var(--light-blue-color);
     display: flex;
@@ -252,9 +239,94 @@ body{
 
 /* Projects */
 .projects{
-    height: 100vh;
     border-bottom: 1px solid var(--light-blue-color);
+    padding: 1rem 0 2rem;
+    text-align: center;
 }
+
+.projectsClick{
+    padding: 10vh 0 2rem;
+}
+
+.projectsTitle{
+    margin: 1rem 0 2rem;
+    color: var(--light-blue-color);
+    font-family: var(--titles-font);
+    font-size: clamp(1em, 2.5vw, 2.5em);
+    display: inline-block;
+}
+
+.projectsTitle:hover{
+    color: orange;
+    cursor: pointer;
+    user-select: none;
+}
+
+.projectsGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.projectsCard{
+    border: 1px solid cornsilk;
+    border-radius: .5rem;
+    border-width: .125rem;
+    height: max-content;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    animation: showImg linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%
+}
+
+.cardTitle{
+    margin-bottom: 1rem;
+    color: var(--light-blue-color);
+    font-size: clamp(1em, 1vw, 2.5em);
+    font-family: var(--texts-font);
+    font-weight: bold;
+}
+
+.cardImg{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardSkills{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: .75rem 0;
+    gap: 2.5rem;
+    color: orange;
+}
+
+.cardDetails{
+    text-align: start;
+    margin-bottom: 1rem;
+    font-size: clamp(1em, 1vw, 2.5em);
+    font-family: var(--texts-font);
+    color: whitesmoke;
+}
+
+.cardOpen{
+    align-self: flex-end;
+    width: 2rem;
+}
+
+.cardOpenImg{
+    height: 100%;
+    width: 100%;
+}
+
+
 
 /* About Me */
 .aboutMe{
@@ -270,6 +342,37 @@ body{
 
 /* Footer */
 .footer{
-    height: 8vh;
+    height: 80vh;
     border-bottom: 1px solid var(--light-blue-color);
+}
+
+/* KeyFrames */
+
+@keyframes scrollHeader {
+    to {
+        background-color: rgba(255, 166, 0, .75);
+        backdrop-filter: blur(5px);
+        border: none;
+    }
+}
+
+@keyframes scrollColor {
+    to {
+        color: #000;
+        border-color: #000;
+    }
+}
+
+@keyframes showImg {
+    from {
+        opacity: 0;
+        translate: 0 50px;
+        scale: .75;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
 }
