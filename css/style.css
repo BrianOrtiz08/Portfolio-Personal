@@ -32,12 +32,39 @@ body{
 .header{
     height: 10vh;
     border-bottom: 1px solid var(--light-blue-color);
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2%;
+    transition: background-color .75s ease;
+
+    animation: scrollHeader linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 20vh;
+}
+
+@keyframes scrollHeader {
+    to {
+        background-color: rgba(255, 166, 0, .75);
+        backdrop-filter: blur(5px);
+        border: none;
+    }
+}
+
+@keyframes scrollColor {
+    to {
+        color: #000;
+        border-color: #000;
+    }
+}
+
+.headerTitleLink, .headerLink, .headerItem::before{
+    animation: scrollColor linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 20vh;
 }
 
 .headerTitle{
@@ -91,7 +118,7 @@ body{
 
 .headerLanguages{
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .headerButtons{
@@ -119,7 +146,6 @@ body{
 
 /* Main */
 .main{
-    margin-top: 10vh;
     height: 90vh;
     border-bottom: 1px solid var(--light-blue-color);
     color: var(--light-blue-color);
