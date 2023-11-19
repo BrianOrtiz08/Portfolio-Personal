@@ -1,5 +1,5 @@
 :root{
-    --black-color: #de9c9c;
+    --black-color: #000;
     --light-blue-color: #049CB3;
     --titles-font: 'Vollkorn', serif;
     --texts-font: 'Plus Jakarta Sans', sans-serif;
@@ -47,6 +47,12 @@ body{
 .headerTitleLink{
     text-decoration: none;
     color: var(--light-blue-color);
+    transition: all .3s ease;
+    user-select: none;
+}
+
+.headerTitleLink:hover{
+    color: orange;
 }
 
 .headerList{
@@ -60,6 +66,7 @@ body{
     text-transform: uppercase;
     color: var(--light-blue-color);
     font-family: var(--texts-font);
+    user-select: none;
 }
 
 .headerItem{
@@ -74,12 +81,12 @@ body{
     bottom: -.25rem;
     left: 25%;
     position: absolute;
+    transition: all .75s ease;
 }
 
 .headerItem:hover::before{
     width: 100%;
     left: 0;
-    transition: .75s;
 }
 
 .headerLanguages{
@@ -95,6 +102,7 @@ body{
     border-width: 0;
     border-radius: 50%;
     cursor: pointer;
+    user-select: none;
 }
 
 .headerButtons:hover{
@@ -114,12 +122,106 @@ body{
     margin-top: 10vh;
     height: 90vh;
     border-bottom: 1px solid var(--light-blue-color);
-    color: wheat;
+    color: var(--light-blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.mainDetails{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.mainName{
+    font-style: oblique;
+    opacity: .75;
+    font-family: var(--texts-font);
+    font-size: clamp(1em, 1.25vw, 2.5em);
+}
+
+.mainRol{
+    margin: 1rem 0;
+    font-family: var(--titles-font);
+    font-size: clamp(1em, 2.5vw, 2.5em);
+    text-wrap: wrap;
+    text-align: start;
+    color: orange;
+}
+
+.mainParagraph{
+    text-align: justify;
+    width: 90%;
+    font-size: clamp(1em, 1.15vw, 2.5em);
+    word-spacing: .1rem;
+    font-family: var(--texts-font);
+}
+
+.mainIcons{
+    margin-top: 3rem;
+    word-spacing: 1rem;
+}
+
+.mainLink{
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.mainLink:hover{
+    opacity: .5;
+}
+
+.mainButtons{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 3rem;
+    padding: 0 3rem 0 0;
+    user-select: none;
+}
+
+.mainCv, .mainContact{
+    padding: .5rem 1rem;
+    color: var(--black-color);
+    font-family: var(--texts-font);
+    font-size: clamp(.9em, .75vw, 2.5em);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: orange;;
+    background-color: rgb(133, 250, 223);
+    word-spacing: .2rem;
+}
+
+.mainCv:hover, .mainContact:hover{
+    background-color: orange;
 }
 
 .mainIconImg{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: auto;
+}
+
+.mainImgProfile{
+    width: 20%;
+    overflow: hidden;
+    height: 60vh;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 2.5%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 2.5%;
+}
+
+.mainImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Projects */
