@@ -17,34 +17,36 @@
 </head>
 
 <body>
-    <div class="containerFlex">
-        <header class="header" id="headerId">
-            <h1 class="headerTitle">
-                <a href="" class="headerTitleLink">AstroWeb</a>
-            </h1>
-
-            <nav class="headerNav">
-                <ul class="headerList">
-                    <li class="headerItem">
-                        <a href="#sectionProjects" class="headerLink" id="projectsId"></a>
-                    </li>
-
-                    <li class="headerItem">
-                        <a href="" class="headerLink" id="aboutMeId"></a>
-                    </li>
-
-                    <li class="headerItem">
-                        <a href="" class="headerLink" id="contactId"></a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="headerLanguages">
-                <button class="headerButtons headerButtonEs" id="headerButtonEsId"></button>
-
-                <button class="headerButtons headerButtonEn" id="headerButtonEnId"></button>
-            </div>
-        </header>
+    <div class="containerFlex" id="containerFlexId">
+        <div class="containerHeader">
+            <header class="header" id="headerId">
+                <h1 class="headerTitle">
+                    <a href="#containerFlexId" class="headerTitleLink">AstroWeb</a>
+                </h1>
+    
+                <nav class="headerNav">
+                    <ul class="headerList">
+                        <li class="headerItem">
+                            <a href="#sectionProjects" class="headerLink" id="projectsId"></a>
+                        </li>
+    
+                        <li class="headerItem">
+                            <a href="#sectionAboutMe" class="headerLink" id="aboutMeId"></a>
+                        </li>
+    
+                        <li class="headerItem">
+                            <a href="#sectionContact" class="headerLink" id="contactId"></a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="headerLanguages">
+                    <button class="headerButtons headerButtonEs" id="headerButtonEsId"></button>
+    
+                    <button class="headerButtons headerButtonEn" id="headerButtonEnId"></button>
+                </div>
+            </header>
+        </div>
 
         <main class="main">
             <div class="mainDetails">
@@ -55,40 +57,40 @@
                 <p class="mainParagraph" id="paragraphId"></p>
 
                 <div class="mainIcons">
-                    <a href="Gmail" class="mainLink">
-                        <img src="./img/gmail.svg" alt="" class="mainIconImg">
+                    <a href="mailto:ortizb355@gmail.com" class="mainLink" target="_blank">
+                        <img src="./img/gmail.svg" alt="Icono de Gmail" class="mainIconImg">
                     </a>
 
-                    <a href="LinkedIn" class="mainLink">
-                        <img src="./img/linkedIn.svg" alt="" class="mainIconImg">
+                    <a href="https://www.linkedin.com/in/brian-alexis-ortiz/" class="mainLink" target="_blank">
+                        <img src="./img/linkedIn.svg" alt="Icono de LinkedIn" class="mainIconImg">
                     </a>
 
-                    <a href="GitHub" class="mainLink">
-                        <img src="./img/github.svg" alt="" class="mainIconImg">
+                    <a href="https://github.com/BrianOrtiz08?tab=repositories" class="mainLink" target="_blank">
+                        <img src="./img/github.svg" alt="Icono de GitHub" class="mainIconImg">
                     </a>
                 </div>
 
                 <div class="mainButtons">
                     <a class="mainCv" id="cvId"></a>
 
-                    <a class="mainContact" id="contactMeId"></a>
+                    <a class="mainContact" id="contactMeId" href="#sectionContact"></a>
                 </div>
             </div>
 
             <div class="mainImgProfile">
-                <img src="./img/profile.jpg" alt="" class="mainImg">
+                <img src="./img/profile.jpg" alt="Imagen de Brian Ortiz" class="mainImg">
             </div>
         </main>
 
         <section class="projects" id="sectionProjects">
-            <h2 class="projectsTitle">Proyectos</h2>
+            <h2 class="projectsTitle" id="projectsTitleId"></h2>
 
             <div class="projectsGrid" id="projectsGridId"></div>
         </section>
 
-        <section class="aboutMe">About Me</section>
+        <section class="aboutMe" id="sectionAboutMe">About Me</section>
 
-        <section class="contact">Contact</section>
+        <section class="contact" id="sectionContact">Contact</section>
 
         <footer class="footer">Footer</footer>
     </div>

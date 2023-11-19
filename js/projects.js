@@ -9,7 +9,8 @@ const projectsSites = [
             three: "JS"
         },
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod tenetur expedita ratione accusamus vitae pariatur excepturi, nihil aspernatur qui dicta!",
-        icon: "open"
+        icon: "open",
+        link: "https://www.google.com/"
     },
     {
         id: 2,
@@ -21,7 +22,8 @@ const projectsSites = [
             three: "JS"
         },
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod tenetur expedita ratione accusamus vitae pariatur excepturi, nihil aspernatur qui dicta!",
-        icon: "open"
+        icon: "open",
+        link: "https://www.facebook.com/"
     },
     {
         id: 3,
@@ -33,7 +35,8 @@ const projectsSites = [
             three: "JS"
         },
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod tenetur expedita ratione accusamus vitae pariatur excepturi, nihil aspernatur qui dicta!",
-        icon: "open"
+        icon: "open",
+        link: "https://www.pinterest.com/"
     },
     {
         id: 4,
@@ -45,7 +48,8 @@ const projectsSites = [
             three: "JS"
         },
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod tenetur expedita ratione accusamus vitae pariatur excepturi, nihil aspernatur qui dicta!",
-        icon: "open"
+        icon: "open",
+        link: "https://www.twitter.com/"
     },
     {
         id: 5,
@@ -57,7 +61,8 @@ const projectsSites = [
             three: "JS"
         },
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod tenetur expedita ratione accusamus vitae pariatur excepturi, nihil aspernatur qui dicta!",
-        icon: "open"
+        icon: "open",
+        link: "https://www.linkedin.com/"
     },
     {
         id: 6,
@@ -69,7 +74,8 @@ const projectsSites = [
             three: "JS"
         },
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod tenetur expedita ratione accusamus vitae pariatur excepturi, nihil aspernatur qui dicta!",
-        icon: "open"
+        icon: "open",
+        link: "https://www.instagram.com/"
     }
 ]
 
@@ -78,9 +84,9 @@ const projectsGridId = document.getElementById("projectsGridId")
 projectsSites.map((e) => {
     projectsGridId.innerHTML += `
         <div class="projectsCard">
-            <p class="cardTitle">${e.name}</p>
+            <a href="${e.link}" class="cardTitle" target="_blank">${e.name}</a>
 
-            <img src="./img/${e.image}.jpg" alt="" class="cardImg">
+            <img src="./img/${e.image}.jpg" alt="Imagen previa del sitio ${e.name}" class="cardImg">
 
             <div class="cardSkills">
                 <p class="cardSkill">${e.skills.one}</p>
@@ -91,7 +97,9 @@ projectsSites.map((e) => {
             <p class="cardDetails">${e.details}</p>
 
             <div class="cardOpen">
-                <img src="./img/${e.icon}.svg" alt="" class="cardOpenImg">
+                <a href="${e.link}" target="_blank">
+                    <img src="./img/${e.icon}.svg" alt="Icono de "open in new tab"" class="cardOpenImg">
+                </a>
             </div>
         </div>
     `
