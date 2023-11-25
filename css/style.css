@@ -19,8 +19,7 @@ html{
 
 /* Body */
 body{
-    /* background-color: var(--black-color); */
-    background-color: red;
+    background-color: var(--black-color);
 }
 
 /* Container Flex */
@@ -36,7 +35,7 @@ body{
     transition: background-color .75s ease;
     animation: scrollHeader linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 20vh;
+    animation-range: 0 10vh;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -59,7 +58,7 @@ body{
 .headerTitleLink, .headerLink, .headerItem::before{
     animation: scrollColor linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 20vh;
+    animation-range: 0 5vh;
 }
 
 .headerTitle{
@@ -372,7 +371,7 @@ body{
 
 @keyframes scrollHeader {
     to {
-        background-color: rgba(255, 166, 0, .75);
+        background-color: rgba(4, 156, 179, 0.75);
         backdrop-filter: blur(5px);
         border: none;
     }
