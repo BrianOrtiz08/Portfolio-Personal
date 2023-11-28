@@ -1,8 +1,12 @@
 :root{
     --black-color: #000;
-    --light-blue-color: #049CB3;
+    --light-blue-color: #59E7FC;
+    --orange-color: #FFB833;
+    --lightBlueHard-color: rgb(133, 250, 223);
     --titles-font: 'Vollkorn', serif;
     --texts-font: 'Plus Jakarta Sans', sans-serif;
+    --titles-fontSize: 2rem;
+    --texts-fontSize: 1rem;
 }
 
 *{
@@ -70,10 +74,11 @@ body{
     color: var(--light-blue-color);
     transition: all .3s ease;
     user-select: none;
+    font-size: var(--titles-fontSize);
 }
 
 .headerTitleLink:hover{
-    color: orange;
+    color: var(--orange-color);
 }
 
 .headerList{
@@ -88,6 +93,7 @@ body{
     color: var(--light-blue-color);
     font-family: var(--texts-font);
     user-select: none;
+    font-size: var(--texts-fontSize)
 }
 
 .headerItem{
@@ -124,6 +130,10 @@ body{
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
+
+    animation: scrollLanguages linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 5vh;
 }
 
 .headerButtons:hover{
@@ -147,6 +157,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 5%;
+    position: relative;
 }
 
 .mainDetails{
@@ -161,6 +172,12 @@ body{
     opacity: .75;
     font-family: var(--texts-font);
     font-size: clamp(1em, 1.25vw, 2.5em);
+    transition: opacity .3s ease-in;
+}
+
+.mainName:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .mainRol{
@@ -169,15 +186,22 @@ body{
     font-size: clamp(1em, 2.5vw, 2.5em);
     text-wrap: wrap;
     text-align: start;
-    color: orange;
+    color: var(--orange-color);
+    transition: opacity .3s ease-in;
+}
+
+.mainRol:hover{
+    opacity: .75;
+    cursor: pointer;
 }
 
 .mainParagraph{
     text-align: justify;
     width: 90%;
-    font-size: clamp(1em, 1.15vw, 2.5em);
-    word-spacing: .1rem;
+    font-size: clamp(1em, 1.25vw, 2.5em);
+    word-spacing: .15rem;
     font-family: var(--texts-font);
+    line-height: 1.75rem;
 }
 
 .mainIcons{
@@ -213,14 +237,14 @@ body{
     border-radius: .25rem;
     cursor: pointer;
     transition: all .3s ease;
-    background-color: orange;;
-    background-color: rgb(133, 250, 223);
+    background-color: var(--orange-color);
+    background-color: var(--lightBlueHard-color);
     word-spacing: .2rem;
     text-decoration: none;
 }
 
 .mainCv:hover, .mainContact:hover{
-    background-color: orange;
+    background-color: var(--orange-color);
 }
 
 .mainIconImg{
@@ -236,6 +260,12 @@ body{
     border-top-left-radius: 2.5%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 2.5%;
+    transition: all .25s ease-in;
+}
+
+.mainImgProfile:hover{
+    cursor: pointer;
+    transform: scale(1.025) rotate(1deg);
 }
 
 .mainImg{
@@ -244,6 +274,16 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+.mainSeparator{
+    border: 0; 
+    height: 2px;
+    background-image: linear-gradient(to right, #000, #59E7FC, #000);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 /* Projects */
 .projects{
@@ -266,7 +306,7 @@ body{
 }
 
 .projectsTitle:hover{
-    color: orange;
+    color: var(--orange-color);
     cursor: pointer;
     user-select: none;
 }
@@ -291,7 +331,7 @@ body{
 
     animation: showImg linear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%
+    animation-range: entry 10% cover 30%
 }
 
 .cardTitle{
@@ -322,7 +362,7 @@ body{
     width: 100%;
     margin: .75rem 0;
     gap: 2.5rem;
-    color: orange;
+    color: var(--orange-color);
 }
 
 .cardSkill:hover, .cardTitle:hover{
@@ -371,7 +411,7 @@ body{
 
 @keyframes scrollHeader {
     to {
-        background-color: rgba(4, 156, 179, 0.75);
+        background-color: rgba(89, 231, 252, .75);
         backdrop-filter: blur(5px);
         border: none;
     }
@@ -384,11 +424,17 @@ body{
     }
 }
 
+@keyframes scrollLanguages {
+    to {
+        border: 1px solid black;
+    }
+}
+
 @keyframes showImg {
     from {
         opacity: 0;
-        translate: 0 50px;
-        scale: .75;
+        translate: 0 20px;
+        scale: .95;
     }
 
     to {
