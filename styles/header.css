@@ -1,0 +1,99 @@
+/* Header */
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.headerTitleLink, .headerLink, .headerItem::before{
+    animation: scrollColor linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 5vh;
+}
+
+.headerTitle{
+    font-family: var(--titles-font);
+}
+
+.headerTitleLink{
+    text-decoration: none;
+    color: var(--light-blue-color);
+    transition: all .3s ease;
+    user-select: none;
+    font-size: var(--titles-fontSize);
+}
+
+.headerTitleLink:hover{
+    color: var(--orange-color);
+}
+
+.headerList{
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+.headerLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-blue-color);
+    font-family: var(--texts-font);
+    user-select: none;
+    font-size: var(--texts-fontSize)
+}
+
+.headerItem{
+    position: relative;
+    word-spacing: .2rem;
+}
+
+.headerItem::before{
+    content: '';
+    border-bottom: 2px solid var(--light-blue-color);
+    width: 50%;
+    bottom: -.25rem;
+    left: 25%;
+    position: absolute;
+    transition: all .75s ease;
+}
+
+.headerItem:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+.headerLanguages{
+    display: flex;
+    gap: 1rem;
+}
+
+.headerButtons{
+    height: 2rem;
+    width: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-width: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+
+    animation: scrollLanguages linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 5vh;
+}
+
+.headerButtons:hover{
+    opacity: .5;
+}
+
+.headerButtonEs{
+    background-image: url(../img/languages/flagArg.svg);
+}
+
+.headerButtonEn{
+    background-image: url(../img/languages/flagGb.svg);
+}

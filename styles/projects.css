@@ -1,0 +1,127 @@
+/* Projects */
+.projects{
+    border-bottom: 1px solid var(--light-blue-color);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.projectsClick{
+    padding: 10vh 0 2rem;
+}
+
+.projectsTitle{
+    margin: 1rem 0;
+    color: var(--light-blue-color);
+    font-family: var(--titles-font);
+    font-size: clamp(1em, 2.5vw, 2.5em);
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.projectsTitle:hover{
+    color: var(--orange-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.projectsGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 4rem;
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.projectsCard{
+    display: flex;
+    gap: 1rem;
+    height: 220px;
+    width: 600px;
+    border: 1px solid var(--darkBlue-color);
+    padding: .5rem;
+    border-radius: .5rem;
+
+    animation: showImg linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%
+}
+
+.cardImg{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.cardImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardDetails{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.cardTitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--titles-font);
+    text-transform: uppercase;
+    text-align: start;
+    text-decoration: none;
+    color: var(--light-blue-color);
+    color: #e98aa5;
+
+    transition: transform 0.5s ease;
+}
+
+.cardTitle:hover{
+    transform: translateX(2px);
+}
+
+.cardDescription{
+    text-align: start;
+    color: var(--white-color);
+}
+
+.cardSkills{
+    display: flex;
+    gap: .75rem;
+}
+
+.cardSkill{
+    width: 50px;
+    height: auto;
+}
+
+.cardButtons{
+    display: flex;
+    gap: 1rem;
+}
+
+.cardButton{
+    display: flex;
+    gap: .75rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.imgCardCodeImg{
+    width: 20px;
+}
+
+.imgCardSiteImg{
+    width: 20px;
+}

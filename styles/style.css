@@ -1,0 +1,75 @@
+:root{
+    --black-color: #000;
+    --light-blue-color: #59E7FC;
+    --orange-color: #FFB833;
+    --lightBlueHard-color: rgb(133, 250, 223);
+    --darkBlue-color: #003B4A;
+    --white-color: #fff;
+    --titles-font: 'Vollkorn', serif;
+    --texts-font: 'Plus Jakarta Sans', sans-serif;
+    --titles-fontSize: 2rem;
+    --texts-fontSize: 1rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Html */
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body{
+    background-color: var(--black-color);
+}
+
+/* Container Flex */
+.containerFlex{
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Container Header */
+.containerHeader{
+    transition: background-color .75s ease;
+    animation: scrollHeader linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 10vh;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--light-blue-color);
+}
+
+
+
+
+
+
+
+/* About Me */
+.aboutMe{
+    height: 60vh;
+    border-bottom: 1px solid var(--light-blue-color);
+}
+
+/* Contact */
+.contact{
+    height: 40vh;
+    border-bottom: 1px solid var(--light-blue-color);
+}
+
+/* Footer */
+.footer{
+    height: 80vh;
+    border-bottom: 1px solid var(--light-blue-color);
+}
