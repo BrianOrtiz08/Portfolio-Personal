@@ -69,7 +69,7 @@ function changeLanguage(e) {
         projectsGridId.innerHTML += `
         <div class="projectsCard">
             <div class="cardImg">
-                <img src="../img/projects/${e.image}.jpg" alt="Imagen previa del sitio ${e.name}" class="cardImage">
+                <img src="img/projects/${e.image}.jpg" alt="Imagen previa del sitio ${e.name}" class="cardImage">
          </div>
 
             <div class="cardDetails">
@@ -77,20 +77,20 @@ function changeLanguage(e) {
                 <p class="cardDescription" id="${e.id}">${detailsLenguage}</p>
     
                 <div class="cardSkills">
-                    <img src="../img/projects/${e.skills.one}.svg" alt="" class="cardSkill">
-                    <img src="../img/projects/${e.skills.two}.svg" alt="" class="cardSkill">
-                    <img src="../img/projects/${e.skills.three}.svg" alt="" class="cardSkill">
+                    <img src="img/projects/${e.skills.one}.svg" alt="" class="cardSkill">
+                    <img src="img/projects/${e.skills.two}.svg" alt="" class="cardSkill">
+                    <img src="img/projects/${e.skills.three}.svg" alt="" class="cardSkill">
                 </div>
 
                 <div class="cardButtons">
                     <a href="${e.linkGitHub}" class="cardButton" target="_blank">
                         <p class="cardCode">${textCodeLenguage}</p>
-                        <img src="../img/projects/${e.iconGitHub}.svg" alt="" class="imgCardCodeImg">
+                        <img src="img/projects/${e.iconGitHub}.svg" alt="" class="imgCardCodeImg">
                     </a>
         
                     <a href="${e.link}" class="cardButton" target="_blank">
                         <p class="cardSite">${textVisitLenguage}</p>
-                        <img src="../img/projects/${e.icon}.svg" alt="Icono de "open in new tab"" class="imgCardSiteImg">
+                        <img src="img/projects/${e.icon}.svg" alt="Icono de "open in new tab"" class="imgCardSiteImg">
                     </a>
                 </div>
             </div>

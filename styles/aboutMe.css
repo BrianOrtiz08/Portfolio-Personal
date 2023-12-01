@@ -1,0 +1,22 @@
+
+.aboutMe{
+    
+    border-bottom: 1px solid var(--light-blue-color);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.aboutMeTitle{
+    margin: 1rem 0;
+    color: var(--light-blue-color);
+    font-family: var(--titles-font);
+    font-size: clamp(1em, 2.5vw, 2.5em);
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.aboutMeContainer{
+    width: 100%;
+    height: 400px;
+    background-color: beige;
+}

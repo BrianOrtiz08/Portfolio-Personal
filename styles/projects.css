@@ -1,8 +1,8 @@
 /* Projects */
 .projects{
-    border-bottom: 1px solid var(--light-blue-color);
     padding-bottom: 2rem;
     text-align: center;
+    position: relative;
 }
 
 .projectsClick{
@@ -143,4 +143,13 @@
 
 .imgCardSiteImg{
     width: 20px;
+}
+
+.projectsSeparator{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #000, #59E7FC, #000);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }

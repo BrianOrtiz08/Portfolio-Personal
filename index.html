@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link CSS's -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/projects.css">
-    <link rel="stylesheet" href="../styles/keyframes.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/aboutMe.css">
+    <link rel="stylesheet" href="./styles/keyframes.css">
     <!-- Link Tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
         <div class="containerHeader">
             <header class="header" id="headerId">
                 <h1 class="headerTitle">
-                    <a href="../public/index.html" class="headerTitleLink">Portfolio</a>
+                    <a href="index.html" class="headerTitleLink">Portfolio</a>
                 </h1>
 
                 <nav class="headerNav">
@@ -65,32 +66,32 @@
                 <div class="mainButtons">
                     <a class="mainCvContainer">
                         <p class="mainCv" id="cvId"></p>
-                        <img src="../img/icons/cv.svg" alt="" class="cvImg">
+                        <img src="img/icons/cv.svg" alt="" class="cvImg">
                     </a>
 
                     <a class="mainContactContainer" href="#sectionContact">
                         <p class="mainContact" id="contactMeId"></p>
-                        <img src="../img/icons/contact.svg" alt="" class="cvImg">
+                        <img src="img/icons/contact.svg" alt="" class="cvImg">
                     </a>
                 </div>
 
                 <div class="mainIcons">
                     <a href="mailto:ortizb355@gmail.com" class="mainLink" target="_blank">
-                        <img src="../img/icons/gmail.svg" alt="Icono de Gmail" class="mainIconImg">
+                        <img src="img/icons/gmail.svg" alt="Icono de Gmail" class="mainIconImg">
                     </a>
 
                     <a href="https://www.linkedin.com/in/brian-alexis-ortiz/" class="mainLink" target="_blank">
-                        <img src="../img/icons/linkedIn.svg" alt="Icono de LinkedIn" class="mainIconImg">
+                        <img src="img/icons/linkedIn.svg" alt="Icono de LinkedIn" class="mainIconImg">
                     </a>
 
                     <a href="https://github.com/BrianOrtiz08?tab=repositories" class="mainLink" target="_blank">
-                        <img src="../img/icons/github.svg" alt="Icono de GitHub" class="mainIconImg">
+                        <img src="img/icons/github.svg" alt="Icono de GitHub" class="mainIconImg">
                     </a>
                 </div>
             </div>
 
             <div class="mainImgProfile">
-                <img src="../img/profile.jpg" alt="Imagen de Brian Ortiz" class="mainImg">
+                <img src="img/profile.jpg" alt="Imagen de Brian Ortiz" class="mainImg">
             </div>
 
             <hr class="mainSeparator">
@@ -101,9 +102,16 @@
             <h2 class="projectsTitle" id="projectsTitleId"></h2>
 
             <div class="projectsGrid" id="projectsGridId"></div>
+
+            <hr class="projectsSeparator">
         </section>
 
-        <section class="aboutMe" id="sectionAboutMe">About Me</section>
+        <section class="aboutMe" id="sectionAboutMe">
+            <h3 class="aboutMeTitle">Sobre mi</h3>
+
+            <div class="aboutMeContainer">
+            </div>
+        </section>
 
         <section class="contact" id="sectionContact">Contact</section>
 
@@ -111,9 +119,9 @@
     </div>
 
     <!-- Link de JS -->
-    <script src="../scripts/script.js"></script>
-    <script src="../scripts/projects.js"></script>
-    <script src="../scripts/languages.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/languages.js"></script>
 </body>
 
 </html>

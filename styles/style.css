@@ -56,11 +56,7 @@ body{
 
 
 
-/* About Me */
-.aboutMe{
-    height: 60vh;
-    border-bottom: 1px solid var(--light-blue-color);
-}
+
 
 /* Contact */
 .contact{
