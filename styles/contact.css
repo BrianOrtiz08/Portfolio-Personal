@@ -1,0 +1,105 @@
+/* Contact */
+.contact{
+    height: max-content;
+    padding-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    color: var(--white-color);
+}
+
+.contactTitle{
+    margin: 1rem 0;
+    color: var(--light-blue-color);
+    font-family: var(--titles-font);
+    font-size: clamp(1em, 2.5vw, 2.5em);
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.contactContainer{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.contactDetails{
+    text-align: start;
+    width: 40%;
+}
+
+.contactDetailsTitle{
+    font-family: var(--titles-font);
+    font-size: var(--titles-fontSize);
+    margin-bottom: 1rem;
+}
+
+.contactDetailsParagraph{
+    font-family: var(--texts-font);
+    font-size: var(--texts-fontSize);
+    margin-bottom: 1rem;
+}
+
+.contactDetailsCall{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    text-decoration: none;
+    color: var(--white-color);
+    gap: 1rem;
+}
+
+.contactDetailsImg{
+    width: 30px;
+}
+
+.contactDetailsNumber{
+    font-family: var(--texts-font);
+    font-size: var(--texts-fontSize);
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 60%;
+}
+
+.formInput{
+    background: inherit;
+    background-color:transparent;
+    margin-bottom: 1rem;
+    padding-block: 0px;
+    padding-inline: 0px;
+    padding: 1rem 0 1rem .5rem ;
+    border: 1px solid var(--white-color);
+}
+
+.formInput::placeholder{
+    font-family: var(--texts-font);
+    font-size: var(--texts-fontSize);
+}
+
+.formMessage{
+    height: 300px;
+}
+
+.formSubmit{
+    width: max-content;
+    padding: .5rem 1rem;
+    font-family: var(--texts-font);
+    font-size: var(--texts-fontSize);
+}
+
+.formSubmit:hover{
+    cursor: pointer;
+}
+
+.contactSeparator{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #000, #59E7FC, #000);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

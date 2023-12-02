@@ -5,8 +5,10 @@
     --lightBlueHard-color: rgb(133, 250, 223);
     --darkBlue-color: #003B4A;
     --white-color: #fff;
+
     --titles-font: 'Vollkorn', serif;
     --texts-font: 'Plus Jakarta Sans', sans-serif;
+    
     --titles-fontSize: 2rem;
     --texts-fontSize: 1rem;
 }
@@ -53,16 +55,6 @@ body{
 
 
 
-
-
-
-
-
-/* Contact */
-.contact{
-    height: 40vh;
-    border-bottom: 1px solid var(--light-blue-color);
-}
 
 /* Footer */
 .footer{

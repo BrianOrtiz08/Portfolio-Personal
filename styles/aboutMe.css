@@ -1,8 +1,7 @@
-
 .aboutMe{
-    border-bottom: 1px solid var(--light-blue-color);
     padding-bottom: 2rem;
     text-align: center;
+    position: relative;
 }
 
 .aboutMeTitle{
@@ -112,4 +111,13 @@
 .aboutMeNameText, .aboutMeAgeText, .aboutMeLocationText{
     font-weight: lighter;
     font-family: var(--titles-font);
+}
+
+.aboutMeSeparator{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #000, #59E7FC, #000);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
