@@ -1,6 +1,5 @@
 
 .aboutMe{
-    
     border-bottom: 1px solid var(--light-blue-color);
     padding-bottom: 2rem;
     text-align: center;
@@ -16,7 +15,101 @@
 }
 
 .aboutMeContainer{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.aboutMeImage{
+    width: 20%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.aboutMeImg{
     width: 100%;
-    height: 400px;
-    background-color: beige;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.aboutMeParagraph{
+    width: 55%;
+    color: var(--white-color);
+}
+
+.aboutMeSubtitle{
+    text-align: start;
+    font-family: var(--titles-font);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.aboutMeText{
+    margin-bottom: 1rem;
+}
+
+.aboutMeText, .aboutMeTextSecond{
+    text-align: start;
+    font-size: var(--texts-fontSize);
+    font-family: var(--texts-font);
+    line-height: 1.5rem;
+}
+
+.aboutMeCvContainer {
+    display: flex;
+    padding: .75rem 1.25rem;
+    color: var(--black-color);
+    font-family: var(--texts-font);
+    font-size: clamp(.9em, .75vw, 2.5em);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    word-spacing: .2rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
+    margin-top: 2rem;
+}
+
+.aboutMeCvContainer {
+    background-color: var(--lightBlueHard-color);
+}
+
+.aboutMeCvContainer:hover {
+    background-color: var(--orange-color);
+}
+
+.aboutMeDetails{
+    width: max-content;
+    text-align: start;
+    color: var(--white-color);
+    padding: 0 2rem;
+}
+
+.aboutMeSubtitleSecond{
+    font-family: var(--titles-font);
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+    text-decoration: underline;
+}
+
+.aboutMeName, .aboutMeAge, .aboutMeLocation{
+    font-weight: bold;
+    margin-top: 1rem;
+    font-family: var(--titles-font);
+    text-transform: uppercase;
+}
+
+.aboutMeNameText, .aboutMeAgeText, .aboutMeLocationText{
+    font-weight: lighter;
+    font-family: var(--titles-font);
 }

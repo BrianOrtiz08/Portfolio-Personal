@@ -11,7 +11,7 @@
 }
 
 .mainDetails {
-    width: 60%;
+    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -60,7 +60,7 @@
 .mainIcons {
     display: flex;
     width: 100%;
-    justify-content: start;
+    justify-content: end;
     gap: 1rem;
 }
 
@@ -78,17 +78,6 @@
     height: auto;
 }
 
-.mainButtons {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    gap: 3rem;
-    margin-top: 2rem;
-    padding-right: 3rem;
-    user-select: none;
-}
-
-.mainCvContainer,
 .mainContactContainer {
     display: flex;
     padding: .75rem 1.25rem;
@@ -107,16 +96,9 @@
     gap: 1rem;
 }
 
-.mainCvContainer {
-    background-color: var(--lightBlueHard-color);
-}
-
-.mainCvContainer:hover {
-    background-color: var(--orange-color);
-}
-
 .mainContactContainer {
     background-color: var(--orange-color);
+    margin-top: 2rem;
 }
 
 .mainContactContainer:hover {
