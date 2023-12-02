@@ -12,7 +12,18 @@ const lenguages = [
         "cv": "Ver Curriculum",
         "contact": "Contáctame",
 
-        "sectionProjects": "Proyectos"
+        "sectionProjects": "Proyectos",
+
+        "sectionAboutMe" : "Acerca de mi",
+        "paragraphTitle" : "¡Hola!",
+        "aboutMeText" : "Datos sobre mi en español",
+        "aboutMeTextSecond" : "Datos 2 sobre mi en español",
+
+        "aboutMeDetails" : "Detalles",
+        "aboutMeName" : "Nombre y apellido:",
+        "aboutMeAge" : "Edad:",
+        "aboutMeNameText" : "21 años",
+        "aboutMeLocation" : "Ubicación:"
     },
     {
         "projects": "Projects",
@@ -27,7 +38,18 @@ const lenguages = [
         "cv": "See resume",
         "contact": "Contact me",
 
-        "sectionProjects": "Projects"
+        "sectionProjects": "Projects",
+
+        "sectionAboutMe" : "About Me",
+        "paragraphTitle" : "¡Hello!",
+        "aboutMeText" : "Datos sobre mi en ingles",
+        "aboutMeTextSecond" : "Datos 2 sobre mi en ingles",
+
+        "aboutMeDetails" : "Details",
+        "aboutMeName" : "Name and surname:",
+        "aboutMeAge" : "Age:",
+        "aboutMeNameText" : "21 years old",
+        "aboutMeLocation" : "Location:"
     }
 ]
 
@@ -113,6 +135,17 @@ function changeLanguage(e) {
 
     let projectsTitleId = document.getElementById("projectsTitleId")
 
+    let aboutMeTitleId = document.getElementById("aboutMeTitleId")
+    let aboutMeSubtitleId = document.getElementById("aboutMeSubtitleId")
+    let aboutMeTextId = document.getElementById("aboutMeTextId")
+    let aboutMeTextSecondId = document.getElementById("aboutMeTextSecondId")
+
+    let aboutMeSubtitleSecondId = document.getElementById("aboutMeSubtitleSecondId")
+    let aboutMeNameId = document.getElementById("aboutMeNameId")
+    let aboutMeAgeId = document.getElementById("aboutMeAgeId")
+    let aboutMeAgeTextId = document.getElementById("aboutMeAgeTextId")
+    let aboutMeLocationId = document.getElementById("aboutMeLocationId")
+
     projectsId.innerText = lenguages[e].projects
     aboutMeId.innerText = lenguages[e].aboutMe
     contactId.innerText = lenguages[e].contact
@@ -126,6 +159,17 @@ function changeLanguage(e) {
     contactMeId.innerText = lenguages[e].contact
 
     projectsTitleId.innerText = lenguages[e].sectionProjects
+
+    aboutMeTitleId.innerText = lenguages[e].sectionAboutMe
+    aboutMeSubtitleId.innerText = lenguages[e].paragraphTitle
+    aboutMeTextId.innerText = lenguages[e].aboutMeText
+    aboutMeTextSecondId.innerText = lenguages[e].aboutMeTextSecond
+
+    aboutMeSubtitleSecondId.innerText = lenguages[e].aboutMeDetails
+    aboutMeNameId.innerText = lenguages[e].aboutMeName
+    aboutMeAgeId.innerText = lenguages[e].aboutMeAge
+    aboutMeAgeTextId.innerText = lenguages[e].aboutMeNameText
+    aboutMeLocationId.innerText = lenguages[e].aboutMeLocation
 }
 
 if (localStorage.getItem("languageSpanish")) {
