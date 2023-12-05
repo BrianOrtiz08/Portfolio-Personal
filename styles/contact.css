@@ -16,6 +16,12 @@
     text-decoration: underline;
 }
 
+.contactTitle:hover{
+    color: var(--orange-color);
+    cursor: pointer;
+    user-select: none;
+}
+
 .contactContainer{
     display: flex;
     width: 90%;
@@ -32,9 +38,10 @@
     font-family: var(--titles-font);
     font-size: var(--titles-fontSize);
     margin-bottom: 1rem;
+    color: var(--orange-color);
 }
 
-.contactDetailsParagraph{
+.contactDetailsParagraphs{
     font-family: var(--texts-font);
     font-size: var(--texts-fontSize);
     margin-bottom: 1rem;
@@ -56,6 +63,7 @@
 .contactDetailsNumber{
     font-family: var(--texts-font);
     font-size: var(--texts-fontSize);
+    text-decoration: underline;
 }
 
 .contactForm{
@@ -93,6 +101,31 @@
 
 .formSubmit:hover{
     cursor: pointer;
+}
+
+.contactDetailsFooter{
+    margin-top: 2rem;
+}
+
+.footerTitle{
+    font-family: var(--titles-font);
+    font-size: var(--titles-fontSize);
+    color: var(--orange-color);
+}
+
+.footerList{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    margin: .5rem 0;
+}
+
+.footerImg{
+    width: 25px;
+}
+
+.footerImg:hover{
+    opacity: .5;
 }
 
 .contactSeparator{

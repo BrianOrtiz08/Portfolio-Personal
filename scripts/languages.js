@@ -1,61 +1,3 @@
-const lenguages = [
-    {
-        "projects": "Proyectos",
-        "aboutMe": "Acerca de mi",
-        "contact": "Contacto",
-
-        "name": "¡Hola! Mi nombre es Brian Ortiz",
-        "rol": "Desarrollador Web Front End & Diseñador UX",
-        "paragraph": "En constante aprendizaje sobre el Desarrollo Web y el Diseño UX/UI.",
-        "paragraphSecond": "Si buscas un persona comprometida y entusiasta, estoy listo para tu próximo proyecto.",
-
-        "cv": "Ver Curriculum",
-        "contact": "Contáctame",
-
-        "sectionProjects": "Proyectos",
-
-        "sectionAboutMe" : "Acerca de mi",
-        "paragraphTitle" : "¡Hola!",
-        "aboutMeText" : "Datos sobre mi en español",
-        "aboutMeTextSecond" : "Datos 2 sobre mi en español",
-
-        "aboutMeDetails" : "Detalles",
-        "aboutMeName" : "Nombre y apellido:",
-        "aboutMeAge" : "Edad:",
-        "aboutMeNameText" : "21 años",
-        "aboutMeLocation" : "Ubicación:"
-    },
-    {
-        "projects": "Projects",
-        "aboutMe": "About me",
-        "contact": "Contact",
-
-        "name": "Hello! My name is Brian Ortiz",
-        "rol": "Front End Web Developer & UX Designer",
-        "paragraph": "Constantly learning about Web Development and UX/UI Design.",
-        "paragraphSecond": "If you are looking for a committed and enthusiastic person, I am ready for your next project.",
-
-        "cv": "See resume",
-        "contact": "Contact me",
-
-        "sectionProjects": "Projects",
-
-        "sectionAboutMe" : "About Me",
-        "paragraphTitle" : "¡Hello!",
-        "aboutMeText" : "Datos sobre mi en ingles",
-        "aboutMeTextSecond" : "Datos 2 sobre mi en ingles",
-
-        "aboutMeDetails" : "Details",
-        "aboutMeName" : "Name and surname:",
-        "aboutMeAge" : "Age:",
-        "aboutMeNameText" : "21 years old",
-        "aboutMeLocation" : "Location:"
-    }
-]
-
-let buttonEs = document.getElementById("headerButtonEsId")
-let buttonEn = document.getElementById("headerButtonEnId")
-
 buttonEs.addEventListener("click", () => {
     localStorage.setItem("languageSpanish", "true")
     changeLanguage(0)
@@ -67,13 +9,6 @@ buttonEn.addEventListener("click", () => {
 })
 
 function changeLanguage(e) {
-    let projectsGridId = document.getElementById("projectsGridId")
-    let idiomaStorage = ""
-    let detailsLenguage = ""
-    let textCodeLenguage = ""
-    let textVisitLenguage = ""
-    let idioma = ""
-
     projectsGridId.innerHTML = ""
     idiomaStorage = localStorage.getItem("languageSpanish") === "true" ? 1 : 0;
 
@@ -120,32 +55,6 @@ function changeLanguage(e) {
     `
     })
 
-
-    let projectsId = document.getElementById("projectsId")
-    let aboutMeId = document.getElementById("aboutMeId")
-    let contactId = document.getElementById("contactId")
-
-    let nameId = document.getElementById("nameId")
-    let rolId = document.getElementById("rolId")
-    let paragraphId = document.getElementById("paragraphId")
-    let paragraphIdSecond = document.getElementById("paragraphIdSecond")
-
-    let cvId = document.getElementById("cvId")
-    let contactMeId = document.getElementById("contactMeId")
-
-    let projectsTitleId = document.getElementById("projectsTitleId")
-
-    let aboutMeTitleId = document.getElementById("aboutMeTitleId")
-    let aboutMeSubtitleId = document.getElementById("aboutMeSubtitleId")
-    let aboutMeTextId = document.getElementById("aboutMeTextId")
-    let aboutMeTextSecondId = document.getElementById("aboutMeTextSecondId")
-
-    let aboutMeSubtitleSecondId = document.getElementById("aboutMeSubtitleSecondId")
-    let aboutMeNameId = document.getElementById("aboutMeNameId")
-    let aboutMeAgeId = document.getElementById("aboutMeAgeId")
-    let aboutMeAgeTextId = document.getElementById("aboutMeAgeTextId")
-    let aboutMeLocationId = document.getElementById("aboutMeLocationId")
-
     projectsId.innerText = lenguages[e].projects
     aboutMeId.innerText = lenguages[e].aboutMe
     contactId.innerText = lenguages[e].contact
@@ -164,12 +73,20 @@ function changeLanguage(e) {
     aboutMeSubtitleId.innerText = lenguages[e].paragraphTitle
     aboutMeTextId.innerText = lenguages[e].aboutMeText
     aboutMeTextSecondId.innerText = lenguages[e].aboutMeTextSecond
+    aboutMeTextThirdId.innerText = lenguages[e].aboutMeTextThird
+    aboutMeTextFourthId.innerText = lenguages[e].aboutMeTextFourth
+    aboutMeTextFifthId.innerText = lenguages[e].aboutMeTextFifth
 
     aboutMeSubtitleSecondId.innerText = lenguages[e].aboutMeDetails
     aboutMeNameId.innerText = lenguages[e].aboutMeName
     aboutMeAgeId.innerText = lenguages[e].aboutMeAge
     aboutMeAgeTextId.innerText = lenguages[e].aboutMeNameText
     aboutMeLocationId.innerText = lenguages[e].aboutMeLocation
+    contactTitleId.innerText = lenguages[e].sectionContact
+    contactDetailsTitleId.innerText = lenguages[e].contactDetailsTitle
+    contactDetailsParagraphOneId.innerText = lenguages[e].contactParagraphOne
+    contactDetailsParagraphTwoId.innerText = lenguages[e].contactParagraphTwo
+    footerTitleId.innerText = lenguages[e].contactFooter
 }
 
 if (localStorage.getItem("languageSpanish")) {

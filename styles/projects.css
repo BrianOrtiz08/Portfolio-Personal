@@ -47,7 +47,7 @@
 
     animation: showImg linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 30%
+    animation-range: entry 10% cover 25%
 }
 
 .cardImg{

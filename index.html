@@ -11,15 +11,18 @@
     <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" href="./styles/aboutMe.css">
     <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/keyframes.css">
-    <!-- Link Tipografía -->
+    <!-- Links Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Vollkorn:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <!-- Title -->
-    <title>Portfolio Personal</title>
+    <title>AstroWeb</title>
 </head>
 
 <body>
@@ -27,7 +30,7 @@
         <div class="containerHeader">
             <header class="header" id="headerId">
                 <h1 class="headerTitle">
-                    <a href="index.html" class="headerTitleLink">Portfolio</a>
+                    <a href="index.html" class="headerTitleLink">AstroWeb</a>
                 </h1>
 
                 <nav class="headerNav">
@@ -110,9 +113,14 @@
 
                 <div class="aboutMeParagraph">
                     <h3 class="aboutMeSubtitle" id="aboutMeSubtitleId"></h3>
-                    <p class="aboutMeText" id="aboutMeTextId"></p>
-                    <p class="aboutMeTextSecond" id="aboutMeTextSecondId"></p>
-                    <a class="aboutMeCvContainer">
+
+                    <p class="aboutMeText aboutMeTexts" id="aboutMeTextId"></p>
+                    <p class="aboutMeTextSecond aboutMeTexts" id="aboutMeTextSecondId"></p>
+                    <p class="aboutMeTextThird aboutMeTexts" id="aboutMeTextThirdId"></p>
+                    <p class="aboutMeTextFourth aboutMeTexts" id="aboutMeTextFourthId"></p>
+                    <p class="aboutMeTextFifth aboutMeTexts" id="aboutMeTextFifthId"></p>
+
+                    <a download="CV-Brian-Ortiz" href="./resources/CV Ortiz Brian.pdf" target="_blank" class="aboutMeCvContainer">
                         <p class="aboutMeCv" id="cvId"></p>
                         <img src="img/icons/cv.svg" alt="" class="cvImg">
                     </a>
@@ -129,6 +137,9 @@
 
                     <p class="aboutMeLocation" id="aboutMeLocationId"></p>
                     <p class="aboutMeLocationText">Santa Fe, Argentina</p>
+
+                    <p class="aboutMeHobbie">Hobbie:</p>
+                    <p class="aboutMeHobbieText">Running</p>
                 </div>
             </div>
 
@@ -136,19 +147,46 @@
         </section>
 
         <section class="contact" id="sectionContact">
-            <h3 class="contactTitle">Contacto</h3>
+            <h3 class="contactTitle" id="contactTitleId"></h3>
 
             <div class="contactContainer">
                 <div class="contactDetails">
-                    <h4 class="contactDetailsTitle">No seas tímido</h4>
-                    <p class="contactDetailsParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab laboriosam laborum dolore corporis nobis! Aliquid consequatur in asperiores? Adipisci, aut.</p>
+                    <h4 class="contactDetailsTitle" id="contactDetailsTitleId"></h4>
+                    <p class="contactDetailsParagraphs contactDetailsParagraphOne" id="contactDetailsParagraphOneId"></p>
 
-                    <p class="contactDetailsParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab laboriosam laborum dolore corporis nobis! Aliquid consequatur in asperiores? Adipisci, aut.</p>
+                    <p class="contactDetailsParagraphs contactDetailsParagraphTwo" id="contactDetailsParagraphTwoId"></p>
 
-                    <a href="" class="contactDetailsCall">
+                    <a href="https://wa.link/lep8jg" target="_blank" class="contactDetailsCall">
                         <img src="img/icons/cell.svg" alt="" class="contactDetailsImg">
                         <p class="contactDetailsNumber">3462307512</p>
                     </a>
+
+                    <footer class="contactDetailsFooter">
+                        <h4 class="footerTitle" id="footerTitleId"></h4>
+
+                        <nav class="footerNav">
+                            <ul class="footerList">
+                                <li class="footerItem">
+                                    <a href="mailto:ortizb355@gmail.com" class="footerLink">
+                                        <img src="./img/icons/gmail.svg" alt="" class="footerImg">
+                                    </a>
+                                </li>
+
+                                <li class="footerItem">
+                                    <a href="https://www.linkedin.com/in/brian-alexis-ortiz/" class="footerLink">
+                                        <img src="./img/icons/linkedIn.svg" alt="" class="footerImg">
+                                    </a>
+                                </li>
+
+                                <li class="footerItem">
+                                    <a href="https://github.com/BrianOrtiz08?tab=repositories" class="footerLink">
+                                        <img src="./img/icons/github.svg" alt="" class="footerImg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </footer>
+                    
                 </div>
 
                 <form action="" class="contactForm">
@@ -162,13 +200,16 @@
             <hr class="contactSeparator">
         </section>
 
-        <footer class="footer">Footer</footer>
+        <footer class="footer">
+            <a href="" class="footerCopy">&copy; 2023 - Propiedad de AstroWeb y diseñado por Brian Ortiz</a>
+        </footer>
     </div>
 
     <!-- Link de JS -->
-    <script src="scripts/script.js"></script>
-    <script src="scripts/projects.js"></script>
-    <script src="scripts/languages.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/nods.js"></script>
+    <script src="./scripts/arrays.js"></script>
+    <script src="./scripts/languages.js"></script>
 </body>
 
 </html>

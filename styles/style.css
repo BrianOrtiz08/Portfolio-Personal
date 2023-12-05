@@ -37,27 +37,3 @@ body{
     max-width: 1400px;
     margin: 0 auto;
 }
-
-/* Container Header */
-.containerHeader{
-    transition: background-color .75s ease;
-    animation: scrollHeader linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0 10vh;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid var(--light-blue-color);
-}
-
-
-
-
-
-/* Footer */
-.footer{
-    height: 80vh;
-    border-bottom: 1px solid var(--light-blue-color);
-}
