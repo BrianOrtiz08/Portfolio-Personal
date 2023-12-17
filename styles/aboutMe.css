@@ -11,6 +11,7 @@
     font-size: clamp(1em, 2.5vw, 2.5em);
     display: inline-block;
     text-decoration: underline;
+    transition: color .4s ease;
 }
 
 .aboutMeTitle:hover{
@@ -33,14 +34,13 @@
     width: 30%;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 5px 5px 5px 0px rgba(255,255,255, .75);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(255,255,255, .75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(255,255,255, .75);
+    opacity: .85;
+    transition: opacity .4s ease;
 }
 
 .aboutMeImage:hover{
     cursor: pointer;
-    transform: scale(1.025);
+    opacity: 1;
 }
 
 .aboutMeImg{

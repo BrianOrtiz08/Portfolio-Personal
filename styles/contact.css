@@ -8,12 +8,13 @@
 }
 
 .contactTitle{
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
     color: var(--light-blue-color);
     font-family: var(--titles-font);
     font-size: clamp(1em, 2.5vw, 2.5em);
     display: inline-block;
     text-decoration: underline;
+    transition: color .4s ease;
 }
 
 .contactTitle:hover{
@@ -32,6 +33,9 @@
 .contactDetails{
     text-align: start;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
 }
 
 .contactDetailsTitle{
@@ -54,6 +58,7 @@
     text-decoration: none;
     color: var(--white-color);
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .contactDetailsImg{
@@ -69,7 +74,7 @@
 .contactForm{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
     width: 60%;
 }
 
@@ -81,11 +86,16 @@
     padding-inline: 0px;
     padding: 1rem 0 1rem .5rem ;
     border: 1px solid var(--white-color);
+    font-family: var(--texts-font);
+    font-size: var(--texts-fontSize);
+    color: var(--white-color);
 }
 
 .formInput::placeholder{
     font-family: var(--texts-font);
+    color: var(--white-color);
     font-size: var(--texts-fontSize);
+    opacity: .5;
 }
 
 .formMessage{
@@ -93,18 +103,26 @@
 }
 
 .formSubmit{
-    width: max-content;
-    padding: .5rem 1rem;
+    width: 25%;
+    padding: .5rem 0;
+    margin-left: auto;
+    background-color: var(--light-blue-color);
+    border: none;
+    border-radius: .25rem;
     font-family: var(--texts-font);
     font-size: var(--texts-fontSize);
+    text-transform: uppercase;
+
+    transition: background-color .4s ease;
 }
 
 .formSubmit:hover{
+    background-color: var(--orange-color);
     cursor: pointer;
 }
 
 .contactDetailsFooter{
-    margin-top: 2rem;
+    margin-top: auto;
 }
 
 .footerTitle{
@@ -122,6 +140,7 @@
 
 .footerImg{
     width: 25px;
+    transition: opacity .3s ease;
 }
 
 .footerImg:hover{

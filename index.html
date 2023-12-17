@@ -190,10 +190,10 @@
                 </div>
 
                 <form action="" class="contactForm">
-                    <input type="text" class="formInput formName" placeholder="Ingrese su nombre y apellido">
-                    <input type="email" class="formInput formEmail" placeholder="Ingrese una dirección de email válida">
-                    <textarea class="formInput formMessage" placeholder="Ingrese su mensaje"></textarea>
-                    <button class="formSubmit">Enviar</button>
+                    <input type="text" autocomplete="off" class="formInput formName" id="formNameId" placeholder="">
+                    <input type="email" autocomplete="off" class="formInput formEmail" id="formEmailId" placeholder="">
+                    <textarea class="formInput formMessage" autocomplete="off" id="formMessageId" placeholder=""></textarea>
+                    <button class="formSubmit" id="formSubmitId"></button>
                 </form>
             </div>
 
@@ -201,7 +201,7 @@
         </section>
 
         <footer class="footer">
-            <a href="" class="footerCopy">&copy; 2023 - Propiedad de AstroWeb y diseñado por Brian Ortiz</a>
+            <a href="#containerFlexId" class="footerCopy" id="footerCopyId"></a>
         </footer>
     </div>
 

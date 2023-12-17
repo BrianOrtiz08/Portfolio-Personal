@@ -41,3 +41,6 @@ let contactDetailsTitleId = document.getElementById("contactDetailsTitleId")
 let contactDetailsParagraphOneId = document.getElementById("contactDetailsParagraphOneId")
 let contactDetailsParagraphTwoId = document.getElementById("contactDetailsParagraphTwoId")
 let footerTitleId = document.getElementById("footerTitleId")
+let formSubmitId = document.getElementById("formSubmitId")
+
+let footerCopyId = document.getElementById("footerCopyId")

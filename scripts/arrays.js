@@ -189,9 +189,15 @@ const lenguages = [
 
         "sectionContact" : "Contacto",
         "contactDetailsTitle" : "No seas tímido",
-        "contactParagraphOne" : "Español",
-        "contactParagraphTwo" : "Español",
-        "contactFooter" : "Seguíme"
+        "contactParagraphOne" : "Si tienes un proyecto en mente para realizar no dudes en contactarme",
+        "contactParagraphTwo" : "Realizo diseños adaptables tanto para versión móvil como para versión escritorio",
+        "contactFooter" : "Seguíme",
+        "inputOne" : "Ingrese su nombre y apellido",
+        "inputTwo" : "Ingrese una dirección de email válida",
+        "inputThree" : "Ingrese su mensaje",
+        "submit" : "Enviar",
+
+        "copy" : "© 2023 - Propiedad de AstroWeb y diseñado por Brian Ortiz"
     },
     {
         "projects": "Projects",
@@ -223,9 +229,15 @@ const lenguages = [
         "aboutMeLocation" : "Location:",
 
         "sectionContact": "Contact",
-        "contactDetailsTitle": "Inglés",
-        "contactParagraphOne" : "Inglés",
-        "contactParagraphTwo" : "Inglés",
-        "contactFooter" : "Follow me"
+        "contactDetailsTitle": "Do not be shy",
+        "contactParagraphOne" : "If you have a project in mind, don't hesitate to talk to me.",
+        "contactParagraphTwo" : "Design for both mobile and desktop versions",
+        "contactFooter" : "Follow me",
+        "inputOne" : "Enter your first and last name",
+        "inputTwo" : "Enter a valid email address",
+        "inputThree" : "Enter your message",
+        "submit" : "Submit",
+
+        "copy" : "© 2023 - Owned by AstroWeb and designed by Brian Ortiz"
     }
 ]

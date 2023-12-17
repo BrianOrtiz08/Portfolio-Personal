@@ -98,6 +98,8 @@
     animation: scrollLanguages linear both;
     animation-timeline: scroll(root);
     animation-range: 0 5vh;
+
+    transition: all .4s ease;
 }
 
 .headerButtons:hover{

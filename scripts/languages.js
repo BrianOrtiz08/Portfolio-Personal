@@ -87,6 +87,12 @@ function changeLanguage(e) {
     contactDetailsParagraphOneId.innerText = lenguages[e].contactParagraphOne
     contactDetailsParagraphTwoId.innerText = lenguages[e].contactParagraphTwo
     footerTitleId.innerText = lenguages[e].contactFooter
+    document.getElementById("formNameId").placeholder = lenguages[e].inputOne
+    document.getElementById("formEmailId").placeholder = lenguages[e].inputTwo
+    document.getElementById("formMessageId").placeholder = lenguages[e].inputThree
+    formSubmitId.innerText = lenguages[e].submit
+
+    footerCopyId.innerText = lenguages[e].copy
 }
 
 if (localStorage.getItem("languageSpanish")) {
