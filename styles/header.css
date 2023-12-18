@@ -29,11 +29,8 @@
     animation-range: 0 5vh;
 }
 
-.headerTitle{
-    font-family: var(--titles-font);
-}
-
 .headerTitleLink{
+    font-family: var(--titles-font);
     text-decoration: none;
     color: var(--light-blue-color);
     transition: all .3s ease;

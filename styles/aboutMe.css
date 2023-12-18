@@ -22,7 +22,7 @@
 
 .aboutMeContainer{
     width: 90%;
-    height: 70vh;
+    height: max-content;
     display: flex;
     padding: 1rem 2rem;
     justify-content: space-between;
@@ -135,9 +135,9 @@
 
 .aboutMeSeparator{
     border: 0;
-    height: 2px;
+    height: 1px;
     background-image: linear-gradient(to right, #000, #59E7FC, #000);
-    width: 100%;
+    width: 100vw;
     position: absolute;
     bottom: 0;
 }

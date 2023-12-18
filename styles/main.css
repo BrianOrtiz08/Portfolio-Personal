@@ -1,17 +1,19 @@
 /* Main */
 .main {
     height: 90vh;
-    margin-top: 10vh;
+    margin: 10vh auto 0;
     color: var(--light-blue-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 10%;
     position: relative;
+    width: 80%;
+    max-width: 1400px;
 }
 
 .mainDetails {
-    width: max-content;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -106,7 +108,7 @@
 }
 
 .mainImgProfile {
-    width: 20%;
+    width: 25%;
     overflow: hidden;
     height: 60vh;
     border-top-right-radius: 50%;
@@ -130,9 +132,9 @@
 
 .mainSeparator {
     border: 0;
-    height: 2px;
+    height: 1px;
     background-image: linear-gradient(to right, #000, #59E7FC, #000);
-    width: 100%;
+    width: 100vw;
     position: absolute;
     bottom: 0;
 }

@@ -1,0 +1,60 @@
+@media (max-width: 1024px) {
+
+    /* Header */
+    .header {
+        height: 10vh;
+        padding: 0 2%;
+    }
+
+    .headerTitleLink {
+        font-size: clamp(1rem, 1.5rem, 2rem);
+    }
+
+    .headerList {
+        gap: 2rem;
+    }
+
+    .headerLink {
+        font-size: clamp(.5rem, .80rem, 2rem);
+    }
+
+    .headerItem {
+        word-spacing: 0;
+    }
+
+    .headerItem::before {
+        border-bottom: 1px solid var(--light-blue-color);
+    }
+
+    .headerButtons {
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Main */
+    .main {
+        gap: 1rem;
+        width: 90%;
+    }
+
+    .mainDetails {
+        width: 80%;
+    }
+
+    .mainImgProfile {
+        width: 20%;
+    }
+}
