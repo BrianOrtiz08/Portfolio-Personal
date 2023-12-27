@@ -1,0 +1,34 @@
+@media (max-width: 768px){
+    
+    /* Header */
+    .headerList{
+        gap: 1.5rem;
+    }
+
+    .headerItem{
+        word-spacing: .3rem;
+    }
+
+    .headerItem::before{
+        width: 90%;
+        left: 5%;
+    }
+
+    /* Main */
+    .mainDetails{
+        width: 100%;
+    }
+
+    .mainImgProfile{
+        display: none;
+    }
+
+    /* Projects */
+    .cardSkills {
+        padding: 1rem 0;
+    }
+
+    .cardButtons {
+        justify-content: start;
+    }
+}

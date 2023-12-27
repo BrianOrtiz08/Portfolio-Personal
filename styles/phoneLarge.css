@@ -1,0 +1,22 @@
+@media (max-width: 425px){
+    .headerNav{
+        background-color: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+    }
+
+    .headerList{
+        flex-direction: column;
+        position: relative;
+        top: 10vh;
+        left: 0;
+        text-align: center;
+    }
+
+    .headerLink{
+        color: var(--black-color);
+    }
+}
