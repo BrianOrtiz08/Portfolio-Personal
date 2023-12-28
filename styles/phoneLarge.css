@@ -1,22 +1,113 @@
 @media (max-width: 425px){
     .headerNav{
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: rgba(27, 25, 25, 0.85);
+        backdrop-filter: blur(100px);
+        border: none;
         position: absolute;
-        top: 0;
+        top: -100vh;
         left: 0;
-        width: 50%;
-        height: 100vh;
+        width: 100%;
+        height: max-content;
+        padding: 15vh 0 5vh 0;
+
+        transition: all .5s ease;
+    }
+    
+    .headerNavShow{
+        top: 0;
     }
 
     .headerList{
         flex-direction: column;
         position: relative;
-        top: 10vh;
+        top: 0;
         left: 0;
         text-align: center;
+        font-weight: bold;
+    }
+
+    .headerItem::before{
+        display: none;
     }
 
     .headerLink{
-        color: var(--black-color);
+        color: var(--white-color);
+        text-decoration: underline;
+    }
+
+    .headerTitle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .headerTitleLink, .headerLink, .headerItem::before{
+        animation: none;
+    }
+
+    .buttonBurger, .buttonBurgerClose, .headerButtons, .headerTitle{
+        z-index: 100;
+    }
+
+    .buttonBurger{
+        display: block;
+    }
+
+    .buttonBurgerRemove{
+        display: none;
+    }
+
+    .buttonBurgerCloseShow{
+        display: block;
+    }
+
+    /* Main */
+    .main {
+        height: max-content;
+        padding: 4rem 0;
+    }
+
+    /* Projects */
+    .projectsGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    /* About me */
+    .aboutMeImage, .aboutMeDetails{
+        display: none;
+    }
+
+    .aboutMeParagraph{
+        width: 100%;
+    }
+
+    /* Contact */
+    .contactContainer{
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .contactDetails, .contactForm{
+        width: 100%;
+        height: max-content;
+    }
+
+    .contactDetailsFooter{
+        margin-top: 2rem;
+    }
+
+    .contactForm{
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    .footerCopy{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: .9rem;
     }
 }

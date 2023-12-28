@@ -110,3 +110,15 @@
 .headerButtonEn{
     background-image: url(../img/languages/flagGb.svg);
 }
+
+.buttonBurgerImg, .buttonBurgerCloseImg{
+    height: 2rem;
+    width: 2rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.buttonBurger, .buttonBurgerClose{
+    display: none;
+}

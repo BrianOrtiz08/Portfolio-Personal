@@ -1,6 +1,9 @@
 let buttonEs = document.getElementById("headerButtonEsId")
 let buttonEn = document.getElementById("headerButtonEnId")
 
+let buttonBurgerId = document.getElementById("buttonBurgerId")
+let buttonBurgerCloseId = document.getElementById("buttonBurgerCloseId")
+
 let projectsGridId = document.getElementById("projectsGridId")
 let idiomaStorage = ""
 let detailsLenguage = ""
