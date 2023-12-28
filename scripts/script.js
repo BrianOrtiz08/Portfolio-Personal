@@ -5,6 +5,19 @@ projectsId.addEventListener("click", () => {
     sectionProjects.classList.add("projectsClick")
 })
 
+aboutMeId.addEventListener("click", () => {
+    let sectionAboutMe = document.getElementById("sectionAboutMe")
+
+    sectionAboutMe.classList.add("aboutMeClick")
+})
+
+contactId.addEventListener("click", () => {
+    let sectionContact = document.getElementById("sectionContact")
+
+    sectionContact.classList.add("contactClick")
+})
+
+
 // Menú hamburguesa
 buttonBurgerId.addEventListener("click", () => {
     let headerNavId = document.getElementById("headerNavId")

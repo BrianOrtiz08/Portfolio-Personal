@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.aboutMeClick{
+    padding: 10vh 0 2rem;
+}
+
 .aboutMeTitle{
     margin: 1rem 0;
     color: var(--light-blue-color);
